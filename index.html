@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API de Pokémon con Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://pokeapi.co/api/v2/pokemon/"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="icons/icon-192x192.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#tipos-pokemon">Tipos de Pokemon</a></li>
+        <li><a href="#elementos-pokemon">Elementos de Pokemon</a></li>
+        <li><a href="#pokemon-cards">Pokemon Cards</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+<section id="Inicio" class="mb-5">
+    <div class="container-fluid banner pb-5">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 id="online">Bienvenido a la página de Pokémon</h1>
+          <p>
+            Aquí podrás encontrar toda la información relacionada con el mundo de los Pokémon. Desde los 
+            diferentes tipos de Pokémon y sus características, hasta los entrenadores más destacados y las 
+            últimas noticias relacionadas con la franquicia.
+            ¿Eres un apasionado de los videojuegos? En nuestra sección de videojuegos podrás encontrar 
+            toda la información sobre los diferentes títulos de Pokémon que han sido lanzados a lo largo de 
+            los años. Podrás conocer los detalles de cada uno de ellos, así como las estrategias más efectivas 
+            para poder avanzar en el juego.
+          </p>
+        </div>
+        <div class="col-md-6 mt-5">
+          <img src="./src/ash.jpg" class="img-fluid" alt="Pokémon">
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section class="mt-5 articulos">
+    <div class="container">
+      <div class="row">
+        <div class="card-group mx-auto d-lg-flex d-inline">
+          <div class="card" style="width: 18rem;">
+          <img src="./src/pokedex.jpg" class="card-img-top" alt="imagen que representa una pokedex">
+          <div class="card-body">
+            <h2 class="card-title">Pokédex</h2>
+            <p class="card-text">Consulta la información de todos los Pokémon de la región de Kanto.</p>
+          </div>
+        </div>
+      
+        <div  class="card mr-lg-5 ml-lg-5" style="width: 18rem;">
+          <img src="./src/tipos-de-pokemon.jpg" class="card-img-top" alt="imagen donde se ve los distintos tipos de pokemon">
+          <div class="card-body">
+            <h2 class="card-title">Elementos de Pokemon</h2>
+            <p class="card-text">Conoce los diferentes tipos de Pokémon y qué ventajas y desventajas tienen en combate.</p>
+          </div>
+        </div>
+      
+        <div class="card" style="width: 18rem;">
+          <img src="./src/entrenadores-dos.jpeg" class="card-img-top" alt="imagen donde se ve los distintos tipos de entrenadores">
+          <div class="card-body">
+            <h2 class="card-title">Entrenadores</h2>
+            <p class="card-text">Descubre los entrenadores más famosos de la región de Kanto y los Pokémon que han capturado.</p>
+          </div>
+        </div> 
+</section>
+
+
+<section id="elementos-pokemon">
+  <div class="container">
+  <h2 id="titulo">Elementos: ventajas y desventajas</h2>
+  <table class="table">
+    <thead>
+      <tr class="opciones">
+        <th>Elemento</th>
+        <th>Bueno contra</th>
+        <th>Malo contra</th>
+      </tr>
+    </thead>
+    <tbody class="info">
+      <tr>
+        <td>Fuego</td>
+        <td>Planta, Hielo, Insecto, Acero</td>
+        <td>Agua, Roca, Tierra, Dragón</td>
+      </tr>
+      <tr>
+        <td>Agua</td>
+        <td>Fuego, Tierra, Roca</td>
+        <td>Planta, Eléctrico</td>
+      </tr>
+      <tr>
+        <td>Planta</td>
+        <td>Agua, Tierra, Roca</td>
+        <td>Fuego, Hielo, Veneno, Insecto, Volador</td>
+      </tr>
+      <tr>
+        <td>Eléctrico</td>
+        <td>Agua, Volador</td>
+        <td>Tierra</td>
+      </tr>
+      <tr>
+        <td>Hielo</td>
+        <td>Planta, Tierra, Volador, Dragón</td>
+        <td>Fuego, Lucha, Roca, Acero</td>
+      </tr>
+      <tr>
+        <td>Dragón</td>
+        <td>Dragón</td>
+        <td>Hada, Hielo, Dragón</td>
+      </tr>
+      <tr>
+        <td>Volador</td>
+        <td>Planta, Lucha, Insecto</td>
+        <td>Eléctrico, Hielo, Roca</td>
+      </tr>
+      <tr>
+        <td>Lucha</td>
+        <td>Negro, Acero, Hielo, Roca, Normal</td>
+        <td>Psíquico, Volador, Hada</td>
+      </tr>
+      <tr>
+        <td>Psiquico</td>
+        <td>Lucha, Veneno</td>
+        <td>Bicho, Fantasma, Siniestro</td>
+      </tr>
+      <tr>
+        <td>Acero</td>
+        <td>Hielo, Roca, Hada</td>
+        <td>Fuego, Lucha, Tierra</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</section>
+
+
+<section id="pokemon-cards">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h1 id="titulo">Pokémon Cards</h1>
+            <div class="form-group">
+                <label for="pokemonSelect">Select a Pokémon:</label>
+                <select id="pokemonSelect" class="form-control">
+                    <option value="">Select Pokémon</option>
+                    <option value="pikachu">Pikachu</option>
+                    <option value="charizard">Charizard</option>
+                    <option value="squirtle">Squirtle</option>
+                    <option value="ivysaur">Ivysaur</option>
+                    <option value="bulbasaur">Bulbasaur</option>
+                    <option value="venusaur">Venusaur</option>
+                    <option value="charmander">Charmander</option>
+                    <option value="charmeleon">Charmeleon</option>
+                    <option value="charizard">Charizard</option>
+                    <option value="squirtle">Squirtle</option>
+                    <option value="wartortle">Wartortle</option>
+                    <option value="blastoise">Blastoise</option>
+                    <option value="caterpie">Caterpie</option>
+                    <option value="metapod">Metapod</option>
+                    <option value="butterfree">Butterfree</option>
+                    <option value="weedle">Weedle</option>
+                    <option value="kakuna">Kakuna</option>
+                    <option value="beedrill">Beedrill</option>
+                    <option value="pidgey">Pidgey</option>
+                    <option value="pidgeotto">Pidgeotto</option>
+                    <option value="pidgeot">Pidgeot</option>
+                    <option value="rattata">Rattata</option>
+                    <option value="raticate">Raticate</option>
+                </select>
+            </div>
+            <div id="pokemonCards"></div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+</section>
+  <div id="tipos-pokemon" id="pokemon-cards" class="container">
+    <div class="row" id="pokemon-card-container"></div>
+  </div>
+</section>
+
+<div class="text-center mx-auto">
+  <button id="installButton" class="btn btn-primary mx-auto mb-5">Instalar PWA</button>
+  <button onclick="sharePokemon()" class="btn btn-primary mx-auto mb-5">Compartir</button>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="mx-auto">
+      <form id="search-form">
+      <p>Ingrese nombres de pokemones para agregarlos a la lista</p>
+      <input type="text" id="input" placeholder="Buscar imagenes" class="form-control mb-3">
+      <button type="submit" class="btn btn-primary mx-auto mb-3">Agregar</button>
+    </form>
+    </div>
+
+
+    <div id="historyContainer">
+
+    </div>
+  </div>
+</div>
+
+
+<footer class="bg-light py-3 footer">
+    <div class="container">
+      <p>&copy; 2023 Pokémon Company International. Pokémon y todos los nombres de personajes de Pokémon son marcas registradas de Nintendo.</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Sobre la API de Pokemon</h4>
+          <p>La API de Pokemon es una interfaz de programación de aplicaciones que proporciona información detallada sobre los diferentes Pokemon, sus habilidades, características y más. Es una herramienta esencial para los desarrolladores de aplicaciones y sitios web relacionados con Pokemon.</p>
+        </div>
+        <div class="col-md-3">
+          <h4>Enlaces útiles</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Inicio</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>Contacto</h4>
+          <p>Correo electrónico: info@pokemon-api.com</p>
+          <p>Teléfono: +1 123 456 7890</p>
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
