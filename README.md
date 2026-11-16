@@ -2,6 +2,8 @@
 
 Aplicación web progresiva (PWA) inspirada en el universo Pokémon, con funcionalidades offline y experiencia optimizada para dispositivos móviles.
 
+**🔗 Demo en vivo:** https://pwa-pokemon-two.vercel.app/ (se puede instalar desde el navegador del celular)
+
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) ![PWA](https://img.shields.io/badge/PWA-5A0FC8?logo=pwa&logoColor=white) ![PokeAPI](https://img.shields.io/badge/PokeAPI-EF5350?logo=pokemon&logoColor=white)
 
 ---
